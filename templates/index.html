@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Agent Chatbot</title>
+</head>
+<body>
+    <h1>Multi-Agent Query Assistant</h1>
+    <form method="post">
+        <label>Enter your query:</label><br>
+        <input type="text" name="query" required style="width: 300px;"><br><br>
+        <input type="submit" value="Ask">
+    </form>
+
+    {% if response %}
+        <hr>
+        <p><strong>Routed to:</strong> {{ category.upper() }} Bot</p>
+        <p><strong>Response:</strong> {{ response }}</p>
+    {% endif %}
+</body>
+</html>
